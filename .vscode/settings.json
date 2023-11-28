@@ -1,0 +1,7 @@
+{
+    "editor.minimap.side": "right",
+    "terminal.integrated.accessibleViewPreserveCursorPosition": false,
+    "terminal.integrated.rightClickBehavior": "copyPaste",
+    "terminal.integrated.tabs.location": "right",
+    "terminal.integrated.tabs.enabled": true
+}
