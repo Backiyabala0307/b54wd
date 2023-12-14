@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+</head>
+<body>
+    <a id="link" href="https://www.google.co.in/">google.com</a>
+
+    <button>Hover over me</button>
+
+    <style>
+        #link:link{
+            color:black;
+        }
+        #link:hover{
+            color:lime;
+        }
+        #link:active{
+            color:yellow;
+        }
+        #link:visited{
+            color:green;
+        }
+        button:focus{
+            border-radius :5px;
+            color:beige
+        }
+    </style>
+</body>
+</html>
