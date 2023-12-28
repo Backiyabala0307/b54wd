@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <script>
+        let timer = 10;
+        function countdown(){
+            if(timer===0){
+                console.log("time is up");
+            }
+            else{
+                console.log(timer);
+                timer--;
+            }
+        }
+
+        window.setTimeout(countdown,10000);
+
+    </script>
+    
+</body>
+</html>
