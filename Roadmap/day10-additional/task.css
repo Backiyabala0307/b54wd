@@ -1,8 +1,9 @@
 .container {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(214, 69, 112);
+    border: 2px solid rgb(156, 227, 14);
     
             
 }
@@ -13,7 +14,7 @@
 }
 
 .item {
-    border:2px solid lightcoral; 
+    /* border: 2px solid lightcoral; */
     border-radius:5px;
     margin: 20px;
     padding: 10px;
