@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise Demo</title>
+    <title>Promise and promise states</title>
 </head>
 <body>
+    <h1>Promise and promise states</h1>
+    <script>
+        let promise=new Promise((resolve,reject)=>{
+            resolve(2);
+        });
+
+        promise
+        .then(()=>{
+            console.log("resolved");
+            throw new Error;
+        })
+        .catch(()=>{
+            console.log("rejected");
+        })
+    </script>
     
 </body>
 </html>
