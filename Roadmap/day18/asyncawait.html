@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncAwait</title>
+</head>
+<body>
+    <script>
+        //  fetch("https://restcountries.com/v3.1/all")
+        //         .then((response) => {
+        //             return response.json();
+        //         })
+        //         .then((response) => {
+        //             console.log(response.map(res => res.flag).join('  '));
+        //         })
+        //         .catch((error)=>{
+        //             console.log("Error fetching countries",error);
+        //         })
+
+        // async function getcountries(){
+        //     let response= await fetch("https://restcountries.com/v3.1/all");
+        //     let countries=await response.json();
+        //     console.log(countries);
+        // }
+        // getcountries();
+
+
+    
+        async function getcountries(){
+         try{
+            let response = await fetch("https://restcountries.com/v3.1/all");
+            if(response.ok){
+                
+                let countries = await response.json();
+                console.log(countries);
+            }
+            else{
+                throw new Error('Error found');
+            }
+         }   
+        catch(error){
+            console.log(error);
+        }
+           
+        }
+        getcountries();
+    </script>
+</body>
+</html>
